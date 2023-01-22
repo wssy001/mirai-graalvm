@@ -30,6 +30,12 @@ public class AutoTestService implements ApplicationListener<ApplicationStartedEv
         }
     }
 
+
+    /*
+        native-image 打包工具默认是不会打包 classpath 目录下的 资源文件（如：resources/xxx.jpg），
+        通常需要用户在程序编译前目标文件的信息加入配置文件（即 将目标文件信息写入 resource-config.json ）。
+        当用户启用 Tracing Agent 模式后可以让程序自动配置，这也是 loadPics() 的目的。
+     */
     private void loadPics() {
         ClassPathResource resource = new ClassPathResource("photo.png");
     }
