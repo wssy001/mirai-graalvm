@@ -1,6 +1,9 @@
 # Mirai Graalvm
 一个 [Mirai QQ机器人](https://github.com/mamoe/mirai) + [GraalVM](https://www.graalvm.org/) + [SpringBoot3](https://spring.io/projects/spring-boot) 项目脚手架
 
+## 项目介绍
+- [BiliBili](https://www.bilibili.com/read/cv21372235)
+
 ## 项目地址
 - [Github](https://github.com/wssy001/mirai-graalvm)
 - [Gitee](https://gitee.com/wssy001/mirai-graalvm)
