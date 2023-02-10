@@ -1,6 +1,5 @@
 package com.example.miraigraalvm.handler;
 
-import com.example.miraigraalvm.config.RobotConfig;
 import com.example.miraigraalvm.service.PictureService;
 import com.example.miraigraalvm.service.TextMessageService;
 import lombok.RequiredArgsConstructor;
