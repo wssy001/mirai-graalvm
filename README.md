@@ -38,3 +38,23 @@
           └── photo.png
     
 ```
+
+## 运行
+
+### 运行须知
+- Windows
+> 在Windows 10 专业工作站版 64位 22H2 下测试运行通过， 需要额外安装 VC++ 2015-2019 Redistributable工具
+- Linux
+> 在 Ubuntu 20.04.5 LTS WSL2、Docker镜像 中测试运行通过
+
+### 运行方法
+1. 前往 [Releases](https://github.com/wssy001/mirai-graalvm/releases/latest) 选择合适的压缩包、下载并解压
+2. 修改 config下的appilication.yml文件
+
+### 默认的appilication.yml
+```yml
+robot:
+  account: 12345
+  password: "password"
+```
+3. 启动程序
