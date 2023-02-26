@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Getter
 @Setter
-@Configuration(proxyBeanMethods = false)
+@Configuration
 @ConfigurationProperties(prefix = "robot")
 public class RobotConfig {
 
