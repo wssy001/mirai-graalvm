@@ -1,3 +1,10 @@
-robot:
-  account: 12345
-  password: "password"
+mirai-graalvm:
+  robots:
+    - {
+      # QQ号
+      account: 12345,
+      # 密码
+      password: "password",
+      # 优先级 （数值越小，优先度越高  默认：0）
+      priority: 0
+    }

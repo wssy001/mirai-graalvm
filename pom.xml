@@ -12,7 +12,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>mirai-graalvm</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>mirai-graalvm</name>
     <description>mirai-graalvm</description>
 
