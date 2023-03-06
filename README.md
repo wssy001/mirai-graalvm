@@ -51,7 +51,20 @@
 1. 前往 [Releases](https://github.com/wssy001/mirai-graalvm/releases/latest) 选择合适的压缩包、下载并解压
 2. 修改 config下的appilication.yml文件
 
-### 默认的appilication.yml
+### 最新的默认的appilication.yml
+```yml
+mirai-graalvm:
+  robots:
+    - {
+      # QQ号
+      account: 12345,
+      # 密码
+      password: "password",
+      # 优先级 （数值越小，优先度越高  默认：0）
+      priority: 0
+    }
+```
+### 0.0.2-SNAPSHOT 前默认的appilication.yml
 ```yml
 robot:
   account: 12345
