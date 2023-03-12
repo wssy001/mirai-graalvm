@@ -43,7 +43,7 @@
 
 ### 运行须知
 - Windows
-> 在Windows 10 专业工作站版 64位 22H2 下测试运行通过， 需要额外安装 VC++ 2015-2019 Redistributable工具
+> 在Windows 10 专业工作站版 64位 22H2 下测试运行通过， 需要额外安装 [VC++ 2015-2022 Redistributable工具](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)
 - Linux
 > 在 Ubuntu 20.04.5 LTS WSL2、Docker镜像 中测试运行通过
 
