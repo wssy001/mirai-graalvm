@@ -36,3 +36,4 @@ build/
 /deviceInfo.json
 /src/test/
 /config/
+/src/main/resources/META-INF/native-image/*.json

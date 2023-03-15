@@ -15,6 +15,7 @@ import org.jetbrains.annotations.NotNull;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Service;
+import xyz.cssxsh.mirai.tool.FixProtocolVersion;
 
 import java.util.TreeSet;
 
@@ -28,6 +29,8 @@ public class RobotService implements ApplicationListener<ApplicationStartedEvent
 
     @Override
     public void onApplicationEvent(@NotNull ApplicationStartedEvent event) {
+        FixProtocolVersion.update();
+
         TreeSet<BotInfo> robots = robotConfig.getRobots();
         if (CollUtil.isEmpty(robots)) {
             log.error("******RobotService.onApplicationEvent：机器人配置文件为空");
@@ -35,7 +38,7 @@ public class RobotService implements ApplicationListener<ApplicationStartedEvent
         }
 
         BotConfiguration botConfiguration = new BotConfiguration();
-        botConfiguration.setProtocol(BotConfiguration.MiraiProtocol.ANDROID_PAD);
+        botConfiguration.setProtocol(BotConfiguration.MiraiProtocol.ANDROID_PHONE);
         botConfiguration.fileBasedDeviceInfo("deviceInfo.json");
 //        botConfiguration.noNetworkLog();
 //        botConfiguration.noBotLog();
